@@ -14,7 +14,7 @@ int procesar_archivo(char name[50]){
     }
     printf("Alumnos aprobados: \n");
     while(feof(f)){
-        r_lectura = fread(&alumno, sizeof(struct alumno_t), sizeof(struct alumno_t), f);
+        r_lectura = fread(&alumno, sizeof(struct alumno_t), 1, f);
         if(r_lectura != sizeof(struct alumno_t)){
             printf("Error: leyendo el archivo \n");
             return 65;
