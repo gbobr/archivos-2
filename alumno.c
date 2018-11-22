@@ -3,11 +3,6 @@
 #include "alumno.h"
 
 //Implemente su código a continuación:
-int main()
-{
-    	int resultado;
-    	resultado=procesar_archivo("test/happy.in");
-}
 
 int procesar_archivo(char * path)
 {
