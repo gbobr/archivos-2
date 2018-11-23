@@ -4,7 +4,7 @@
 
 
 //Implemente su código a continuación:
-int procesar_archivo(char name[100]){
+int procesar_archivo(char * name){
     struct alumno_t alumno;
     int r_lectura;
     FILE* f = fopen(name, "r");
