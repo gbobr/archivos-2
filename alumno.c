@@ -4,11 +4,11 @@
 
 
 //Implemente su código a continuación:
-int procesar_archivo(char name[50]){
+int procesar_archivo(char name[100]){
     struct alumno_t alumno;
     int r_lectura;
     FILE* f = fopen(name, "r");
-    if(f){
+    if(!f){
         printf("Error: abirendo el archivo \n");
         return 66;
     }
