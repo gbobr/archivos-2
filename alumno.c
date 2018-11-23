@@ -2,11 +2,7 @@
 #include <stdio.h>
 #include "alumno.h"
  //Implemente su código a continuación:
-int main()
-{
-int result;
-result=procesar_archivo("test/happy.in");
-}
+
  int procesar_archivo(char * path)
 {
 struct alumno_t alumno;
