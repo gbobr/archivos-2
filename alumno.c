@@ -12,7 +12,7 @@ int procesar_archivo(char * name){
         printf("Error: abirendo el archivo \n");
         return 66;
     }
-    printf("Alumnos aprobados: \n");
+    printf("Alumnos aprobados:\n");
     while(!feof(f)){
         r_lectura = fread(&alumno, sizeof(struct alumno_t), 1, f);
         if(!feof(f)) {
