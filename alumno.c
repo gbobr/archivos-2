@@ -26,7 +26,7 @@ int procesar_archivo(char * path)
             return 65;
         } else if(alumno.promedio >= 7)
     {
-        printf("DNI: %d | Promedio: %d \n", alumno.dni, alumno.promedio);
+        printf("DNI: %d | Promedio: %d\n", alumno.dni, alumno.promedio);
     }
     }
     }
