@@ -1,11 +1,14 @@
-﻿#include <stdlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include "alumno.h"
  //Implemente su código a continuación:
 
  int procesar_archivo(char * path)
 {
-
+struct alumno_t alumno;
+FILE* lista_alumnos;
+lista_alumnos = fopen(path,"r");
+int leer;
 if(!lista_alumnos)
 {
   printf("Error al abrir el archivo");
